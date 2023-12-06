@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import {
   BsInstagram,
   BsArrowLeftShort,
@@ -9,7 +10,7 @@ import { images } from "../../constants";
 import "./Gallery.css";
 
 const Gallery = () => {
-  const scrollRef = React.useRef(null);
+  const scrollRef = useRef(null);
 
   const scroll = (direction) => {
     const { current } = scrollRef;
